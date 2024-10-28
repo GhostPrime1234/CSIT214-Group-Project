@@ -1,0 +1,300 @@
+{
+  "users": [
+    {
+      "id": 0,
+      "fname": "Ryan",
+      "lname": "Twemlow",
+      "email": "ratwemlow@gmail.com",
+      "password": "scrypt:32768:8:1$cSxraiJaOEVKvUvm$1174e871f75d17a1c59607dd9cfae2e5217a40b2ff33b26eb9a8b383232ee051791aab593a12a0c94850738f66f1d0454f443789907a78b8818a92124c465544",
+      "card_number": "scrypt:32768:8:1$B3pbWKhw8T$f776c28ef1f90430cf20d41547d4cb1bc8b89610524b6ea228c701cf8e3780363316247f9f11281385b096e6ff2d8b47e7b54fee4e290c47d44cd14e78cddbc3",
+      "cvc": "scrypt:32768:8:1$dzeFQFgQPyLx53Jd$8d9fad8923b93f3fab260b957c80a5b34019196be1eff75cb54f725deab5e93b613a6c29a0f7ef994ee02f08776a4281b34ca0134a4f1c24347583a05eb78439",
+      "expiry_date": "scrypt:32768:8:1$ENP4B5xP2mLaB8Vq$bf2090e4847f44110fb78919c48f17ace5c5126780476951a2af2e3a46994f4ca3042d0971d744c4eafb65f0ea9401ee2c721edd7bf98248bf60988f57892793",
+      "membership_status": {
+        "name": "Voyager",
+        "price": 50,
+        "discount": 0.2
+      },
+      "bookings": [
+        {
+          "id": 3,
+          "start_city": "Sydney",
+          "destination_city": "Melbourne",
+          "booking_date": "2024-04-26",
+          "return_flight": true
+        }
+      ],
+      "booking_lounges": []
+    },
+    {
+      "id": 1,
+      "fname": "James",
+      "lname": "Twemlow",
+      "email": "jtwemlow@gmail.com",
+      "password": "scrypt:32768:8:1$JJY2P2k2bXZUpjiJ$5e575ac71c5e797e1e51dc3b6e5485b0f2ede11235eca2a3129d0ab25182244f9d9c344896aa3fcab2f24cc5311dc6dde9390321b619871a5f6ff5a6d785dd28",
+      "card_number": "scrypt:32768:8:1$uHGCXQINcw$ce6496632ad41f7255b1c5fbdcd798ae317db230c0942690fe2035cf535afde2f7a8a817da03ffeb6f94e4f952ffecebe949938b33079c8294655a0a988089a8",
+      "cvc": "scrypt:32768:8:1$1OlFmrE1EaTZuhj4$099c16a4671dbd0bd76322359dcf360f17279b055e31db566c2e59002c86743a46b2981532071b4377c6e4e9b8e9b0bde778f0875f225d7c979896515cbe2002",
+      "expiry_date": "scrypt:32768:8:1$snP4ion1cQgjE3UU$24254b9d8d7ef6a31ac1d77cd19876d5f72929403f94d2e1763de1f440d3e6670cf06ead7a082aa53dba3518cea354b03d5afda35d469be341373c590436603b",
+      "membership_status": {
+        "name": "Voyager",
+        "price": 50,
+        "discount": 0.2
+      },
+      "bookings": [],
+      "booking_lounges": [
+        {
+          "lounge_id": 0,
+          "date": "2024-05-11"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "fname": "Jan",
+      "lname": "Twemlow",
+      "email": "eejrhg@gmail.com",
+      "password": "scrypt:32768:8:1$MOGURKPS78F6Wb0M$d18ee68e1bba244a9eaab300a2b19df6f0f8ec1c612de49987e52bfa3a1c04937e7cdbb6f2cdae8f7fe888ec7e6716ca22acfc49da185076130197eb3f9e3976",
+      "card_number": "scrypt:32768:8:1$j8CLapz67q$12096775640f75ea77ca9aded1f867b48925584b86eaeec113bcf7c8d899c720942fb372a9a43e7c85abdca83f6cf204eb2fbcc31cb599df6e37159b32615e59",
+      "cvc": "scrypt:32768:8:1$klVGDtwecgRnVfKn$d4461d17a1c944096c7b01ada02bce1d428ea5ba6c4502bf2a3d487ed502d21360a98f1285e44af690248d099552ce6d0f799d53bd3619874290fc52251dc1c2",
+      "expiry_date": "scrypt:32768:8:1$HLBN4hDmJ0ObpkkB$4c02b25c2d26571670bc0f8f0e3469fde39bd7451f791144ae595d3fb65533117b33ea9e297de8b22766b34052e801e6b2a2c2efe8ba72409377e62d14b85677",
+      "membership_status": {
+        "name": "Basic",
+        "price": 0,
+        "discount": 0
+      },
+      "bookings": [],
+      "booking_lounges": []
+    },
+    {
+      "id": 3,
+      "fname": "Jennifer",
+      "lname": "Goul",
+      "email": "ratwmlow@gmail.com",
+      "password": "scrypt:32768:8:1$20rz4kKhlpBDk4ZO$81a1696bf48b52eb3586cc6aefedbb2e5eaa6d3654269730f39a08014f29240e16e2a6299928fa98cb89499c8c310845a59384dce36ac0d8e22f64de948623b8",
+      "card_number": "scrypt:32768:8:1$iFTQMQt80b$d3674ae6e4926d25213afac6cf5e6b0beb61a6bc313e159a26aa5cc52a368edc1ddc0f0869692c24a220f2e1ff9bbb4dd8355c6bb8fdf5e69f2ab92836c1fcfa",
+      "cvc": "scrypt:32768:8:1$3UNT1AUhdqj1FoXQ$7a849f03c953eb0d2ca4c725ea351906f8c1c26edce3fb9b5a7aa0e708ee7f9bb2435f20d68fdf5f260735b81c72f5d4db3958f4f32988f1b3fffc824ab0c577",
+      "expiry_date": "scrypt:32768:8:1$7o98eQbBINX0BXpp$9cada0a6703401bbadd1b0f8f8d41cee107d4e0d585e786e8c6372dabd880a623749307b8625b8ee9d67e8b2c4b892ac78c22f3af7d9852460acc61b3dcf1949",
+      "membership_status": {
+        "name": "Basic",
+        "price": 0,
+        "discount": 0
+      },
+      "bookings": [
+        {
+          "id": 0,
+          "start_city": "Sydney",
+          "destination_city": "Melbourne",
+          "booking_date": "2024-04-26",
+          "return_flight": true
+        }
+      ],
+      "booking_lounges": []
+    },
+    {
+      "id": 4,
+      "fname": "Ryan",
+      "lname": "Twemlow",
+      "email": "rat@gmail.com",
+      "password": "scrypt:32768:8:1$I49N7PwJEgP4oXQa$066c89dec8a09dad440d08f334e0e221aee0e54049464c15e6fd81fa2e181122e70b07e011cdd9965bcbef8c6ab2322bd25abe043dac2f71fe5af09c4ec477b4",
+      "card_number": "scrypt:32768:8:1$NzGGt1gdTb$a13eceff679e0324bbb054b8c64a8f3c1acd697074294e394a6c98ab6f594ff65c510b9c73e535f6723727788419b498458cb1e127fe34e5b303481f63e9c85d",
+      "cvc": "scrypt:32768:8:1$wuO8WlQUZfW8Jrm1$fc36af8a12fbf21b4743991fda91d4aae76ae60fabb0d8ed25e6f58ee793632f10a048eef56f042b02e82709f95c0f8a63a62a04beccbbd28ba9c3568dbbb615",
+      "expiry_date": "scrypt:32768:8:1$WhvN0iwRxd2Zj7ob$72f7a89db70cbbc193b8f6abc76ef3e051555d72a687e8bbe7b9e0a9b913625448769eddf98841c9b6b621382f6076362c9beee404885cab7dd5e6818ea09c7b",
+      "membership_status": {
+        "name": "Aviator",
+        "price": 100,
+        "discount": 0.5
+      },
+      "bookings": [],
+      "booking_lounges": []
+    },
+    {
+      "id": 5,
+      "fname": "Michael",
+      "lname": "B  McMillan",
+      "email": "test@gmail.com",
+      "password": "scrypt:32768:8:1$PWqgl7f7mYPqPW8A$b1515a6932e6dcdb9f2bb6dc06e6a7c7943ca04c6951b749991b7f70c8a616e8c734ad5e4c91ccb478269f22731e3430b698d3aea9ff6263dbca86dc721d63f6",
+      "card_number": "scrypt:32768:8:1$LFMJIPWe0L$242561e8963b9bfe23b48f3546600e6b3fd8e8d51e54ceae414131ac561a9216c854f2a9a00fcb5a42fad33899c6f3fa2f72dcacb70ddecae3bd4a6f033ad71d",
+      "cvc": "scrypt:32768:8:1$nt67MTYiMlLujelz$583c32dc1ce08f24b0d5ea4b280c8b30fb3eb8afa0d4726d6b516ef6583d79c23a40d6c98aab097976bdf4c0be198a0a36e33360489e7e2c1061f58693944841",
+      "expiry_date": "scrypt:32768:8:1$fe4XanIgzVm3VWLK$ef27e8bbfd03a7080afc2f0beae0900f4f82e2ec5338d636ce8aa7d63c3fc377998d599eba97c6394662ba7b88de2c641c7df6bba9d5d8ee22917381e0419f88",
+      "membership_status": {
+        "name": "Voyager",
+        "price": 50,
+        "discount": 0.2
+      },
+      "bookings": [
+        {
+          "id": 0,
+          "start_city": "Sydney",
+          "destination_city": "Melbourne",
+          "booking_date": "2024-04-26",
+          "return_flight": true
+        }
+      ],
+      "booking_lounges": []
+    }
+  ],
+  "airport_lines": {
+    "Sydney": [
+      33.8688,
+      151.2093
+    ],
+    "Melbourne": [
+      37.8136,
+      144.9631
+    ],
+    "Perth": [
+      31.9514,
+      115.8617
+    ],
+    "Darwin": [
+      12.4637,
+      130.8444
+    ],
+    "Canberra": [
+      35.2802,
+      149.131
+    ],
+    "Adelaide": [
+      34.9285,
+      138.6007
+    ],
+    "Hobart": [
+      42.8826,
+      147.3257
+    ],
+    "Brisbane": [
+      27.4705,
+      153.026
+    ]
+  },
+  "available_flights": [
+    {
+      "start_city": "Sydney",
+      "destination_city": "Melbourne",
+      "booking_date": "2024-04-26",
+      "return_flight": true
+    },
+    {
+      "start_city": "Sydney",
+      "destination_city": "Melbourne",
+      "booking_date": "2024-04-27",
+      "return_flight": false
+    },
+    {
+      "start_city": "Melbourne",
+      "destination_city": "Brisbane",
+      "booking_date": "2024-04-27",
+      "return_flight": false
+    },
+    {
+      "start_city": "Melbourne",
+      "destination_city": "Brisbane",
+      "booking_date": "2024-04-27",
+      "return_flight": true
+    },
+    {
+      "start_city": "Brisbane",
+      "destination_city": "Perth",
+      "booking_date": "2024-04-28",
+      "return_flight": true
+    },
+    {
+      "start_city": "Brisbane",
+      "destination_city": "Perth",
+      "booking_date": "2024-04-28",
+      "return_flight": false
+    },
+    {
+      "start_city": "Perth",
+      "destination_city": "Adelaide",
+      "booking_date": "2024-04-29",
+      "return_flight": true
+    },
+    {
+      "start_city": "Adelaide",
+      "destination_city": "Darwin",
+      "booking_date": "2024-04-30",
+      "return_flight": true
+    }
+  ],
+  "staff": [
+    {
+      "fname": "Cameron",
+      "lname": "Smith",
+      "staff_id": 0,
+      "role": "cleaner",
+      "department": null
+    }
+  ],
+  "membership": [
+    {
+      "name": "Basic",
+      "price": 0,
+      "discount": 0
+    },
+    {
+      "name": "Voyager",
+      "price": 50,
+      "discount": 0.2
+    },
+    {
+      "name": "Aviator",
+      "price": 100,
+      "discount": 0.5
+    }
+  ],
+  "lounges": [
+    {
+      "id": 0,
+      "rating": "\u2605\u2605\u2605\u2605\u2605",
+      "name": "FlyDream Elite",
+      "city": "Sydney",
+      "description": "Discover FlyDream Elite, Sydney's premier airport lounge, where sophistication and convenience converge for the discerning traveler. Indulge in gourmet dining, curated beverages, and luxurious amenities amidst a stylish, contemporary setting.",
+      "long_des": "\nWelcome to FlyDream Elite, where luxury meets convenience in the heart of Sydney's bustling airport. Step into a realm of sophistication and comfort, where travelers are treated to an unparalleled experience before their journey takes flight.\n\nNestled amidst the terminals, FlyDream Elite offers a haven of tranquility away from the hustle and bustle of the airport. Immerse yourself in a stylish and contemporary ambiance designed to cater to the discerning tastes of modern travelers.\n\nIndulge in an array of premium amenities, from gourmet dining options curated by renowned chefs to a well-stocked bar featuring an exquisite selection of wines, spirits, and cocktails. Whether you're craving a light snack or a full-course meal, our culinary offerings are sure to tantalize your taste buds.",
+      "price": 350,
+      "image": "/static/images/lounges/image1.jpg",
+      "max_cap": 400,
+      "cur_cap": 54
+    },
+    {
+      "id": 1,
+      "rating": "\u2605\u2605\u2605\u2605",
+      "name": "Gold Lounge",
+      "city": "Sydney",
+      "description": "\nWelcome to Gold Lounge, where opulence meets tranquility in Sydney's vibrant airport. Step into a world of refined elegance and unmatched comfort, designed to cater to the discerning tastes of elite travelers.",
+      "long_des": "\nWelcome to Gold Lounge, where opulence meets tranquility in Sydney's vibrant airport. Step into a world of refined elegance and unmatched comfort, designed to cater to the discerning tastes of elite travelers. Immerse yourself in luxury with premium amenities, including gourmet dining options, an extensive beverage selection, and plush seating areas. Whether you seek a moment of relaxation or a productive work environment, Gold Lounge offers a haven away from the airport's hustle and bustle. Experience personalized service and unparalleled sophistication at Gold Lounge, where every detail is crafted to elevate your pre-flight journey to new heights.",
+      "price": 300,
+      "image": "/static/images/lounges/image2.jpeg",
+      "max_cap": 250,
+      "cur_cap": 101
+    },
+    {
+      "id": 2,
+      "rating": "\u2605\u2605\u2605",
+      "name": "Fly Club",
+      "city": "Perth",
+      "description": "Welcome to Fly Club, Perth's ultimate airport sanctuary for the modern traveler. Step into a world of contemporary luxury and convenience, where every moment is tailored to elevate your pre-flight experience.",
+      "long_des": "Welcome to Fly Club, Perth's ultimate airport sanctuary for the modern traveler. Step into a world of contemporary luxury and convenience, where every moment is tailored to elevate your pre-flight experience. Indulge in culinary delights crafted by top chefs, complemented by a curated selection of beverages to suit every palate. Relax in stylish lounges equipped with state-of-the-art amenities, including high-speed Wi-Fi and charging stations. With dedicated staff providing personalized service, Fly Club ensures a seamless journey from check-in to boarding. Escape the airport crowds and immerse yourself in the sophistication of Fly Club, where luxury and comfort converge to redefine travel excellence.\n\n\n\n\n",
+      "price": 320,
+      "image": "/static/images/lounges/image3.jpeg",
+      "max_cap": 200,
+      "cur_cap": 50
+    },
+    {
+      "id": 3,
+      "rating": "\u2605\u2605\u2605\u2605\u2605",
+      "name": "Golden Sands Lounge",
+      "city": "Queensland",
+      "description": "Welcome to Golden Sands Lounge, a coastal oasis nestled in Queensland's vibrant airport. Step into a world of warmth and relaxation, where the spirit of the tropics meets unparalleled comfort.",
+      "long_des": "\nWelcome to Golden Sands Lounge, a coastal oasis nestled in Queensland's vibrant airport. Step into a world of warmth and relaxation, where the spirit of the tropics meets unparalleled comfort. Indulge in a culinary journey of locally inspired flavors, complemented by refreshing beverages that evoke the essence of paradise. Unwind in our serene lounges, adorned with coastal accents and panoramic views of the golden sands beyond. With attentive staff catering to your every need, Golden Sands Lounge offers a tranquil retreat for travelers seeking refuge from the airport hustle. Experience the epitome of Queensland hospitality at Golden Sands Lounge, where every moment is infused with the laid-back charm of the Sunshine State.",
+      "price": 280,
+      "image": "/static/images/lounges/image4.jpeg",
+      "max_cap": 130,
+      "cur_cap": 67
+    }
+  ],
+  "lounge_locations": [
+    "Sydney",
+    "Perth",
+    "Queensland"
+  ]
+}

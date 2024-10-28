@@ -1,0 +1,104 @@
+{% include "header.html" %}
+
+<style>
+    .dark-gradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80%; /* Adjust the height of the gradient as needed */
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
+  }
+
+  .custom-list-group .list-group-item {
+    border-radius: 10px !important;
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    backdrop-filter: blur(5px) !important;
+      color: white;
+  }
+
+</style>
+
+<style>
+
+    body {
+        background: url("../static/images/lounge_8k_.webp"); !important;
+    }
+
+</style>
+<script src="/static/assets/js/occupancy.js"></script>
+<div style="width: 1000px; max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;">
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <ol class="carousel-indicators">
+      {%for idx, city in enumerate(cities)%}
+    {%if idx == 0%}
+    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+    {%else%}
+    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{idx}}"></li>
+    {%endif%}
+     {%endfor%}
+  </ol>
+
+  <div class="carousel-inner" style="border-radius: 1%">
+    {%for idx, city in enumerate(cities)%}
+    {%if idx == 0%}
+    <div class="carousel-item active">
+    {%else%}
+    <div class="carousel-item">
+    {%endif%}
+      <img src="{{city['image']}}" class="d-block w-100" alt="{{city['name']}}">
+        <div class="dark-gradient"></div>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>{{city['name']}}</h5>
+        <p>{{city['description']}}</p>
+      </div>
+    </div>
+    {%endfor%}
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+    </div>
+</div>
+
+ <div class="container">
+
+        <div class="row justify-content-center">
+            <div class="col-sm-6 mt-5 card" style="width: 50rem">
+                <div class="card-body">
+                    <h5 class="card-title text-center mb-4" style="color: #EDEAD0">Book Your Lounge</h5>
+
+                        <div class="mb-3">
+                            <label for="city" class="form-label" style="color: white;">Select City</label>
+                            <select class="form-select" id="city">
+                                <option selected>Choose...</option>
+                                {%for city in city_name%}
+                                <option>{{city}}</option>
+                                {%endfor%}
+                            </select>
+                        </div>
+
+                        <button onclick="searchLounges()" class="btn btn-light w-100 mt-3">Search</button>
+
+                </div>
+            </div>
+        </div>
+        <!-- New row with two cards below "Book" button -->
+
+        <div class="row mt-4" id="main_page">
+
+
+        </div>
+    </div>
+</div>
+
+
+{% include "footer.html" %}

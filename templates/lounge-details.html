@@ -1,0 +1,67 @@
+{%include "header.html"%}
+
+    <style>
+  .card {
+    position: relative;
+  }
+  .dark-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%; /* Adjust the height of the gradient as needed */
+    background: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.6));
+  }
+</style>
+
+
+    <div class="container py-5">
+  <div class="card bg-light text-black">
+    <img src="{{lounge['image']}}" class="card-img">
+    <div class="dark-gradient"></div> <!-- Move the gradient div inside the card -->
+    <div class="card-img-overlay">
+      <h1 class="mb-0" style="font-size: 3rem; width: 100%; color: white">{{lounge["name"]}}</h1>
+    </div>
+    <div class="card-body option">
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <p class="lead">{{lounge["rating"]}}</p>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <h4 style="color: #EDEAD0">Description</h4>
+                        <p class="lead">{{lounge["long_des"]}}</p>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-12" style="color: white">
+                        <span style="font-size: 3rem;">
+                            <i class="fa-solid fa-dollar-sign"></i>{{float(lounge["price"]) - (float(lounge["price"] * float(discount)))}}</span>
+                            <span style="color: red; font-size: 1rem; padding-left: 8px; text-decoration: line-through;">${{float(lounge["price"])}}</span>
+                    </div>
+                </div>
+        <div class="row mb-3">
+            <div class="col-12">
+                <h4 style="color: #EDEAD0">Book Today</h4>
+                <form method="post" action="/book-lounge/{{lounge['id']}}">
+
+                <div class="mb-3">
+
+                    <label for="date" class="form-label" style="color: white">Date</label>
+                    <input type="date" name="date" class="form-control" id="date">
+                    <button type="submit" class="btn btn-primary" style="color: white">Book</button>
+                </div>
+                    </form>
+            </div>
+        </div>
+                </div>
+            </div>
+
+
+            </div>
+
+
+
+
+{%include "footer.html"%}

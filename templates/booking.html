@@ -1,0 +1,69 @@
+{%include 'header.html'%}
+
+    <div class="container my-4 option">
+        <h2 class="text-center mb-4" style="color: #EDEAD0">Book Flights</h2>
+        <div class="row g-3 align-items-end">
+            <div class="col-md-6">
+                <label for="city1" class="form-label" style="color: white">Select City 1:</label>
+                <select id="city1" name="city1" class="form-select">
+                    <option value="Empty">Empty</option>
+                    <option value="Sydney">Sydney</option>
+                    <option value="Melbourne">Melbourne</option>
+                    <option value="Darwin">Darwin</option>
+                    <option value="Brisbane">Brisbane</option>
+                    <option value="Hobart">Hobart</option>
+                    <option value="Canberra">Canberra</option>
+                    <option value="Adelaide">Adelaide</option>
+                    <option value="Perth">Perth</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label for="city2" class="form-label" style="color: white">Select City 2:</label>
+                <select id="city2" name="city2" class="form-select">
+                    <option value="Empty">Empty</option>
+                    <option value="Sydney">Sydney</option>
+                    <option value="Melbourne">Melbourne</option>
+                    <option value="Darwin">Darwin</option>
+                    <option value="Brisbane">Brisbane</option>
+                    <option value="Hobart">Hobart</option>
+                    <option value="Canberra">Canberra</option>
+                    <option value="Adelaide">Adelaide</option>
+                    <option value="Perth">Perth</option>
+                </select>
+            </div>
+        </div>
+        <div class="my-4 p-3" style="color: white">
+            <div class="row align-items-center mb-3">
+                <div class="col-md-4">
+                    <h4 class="mb-0">Booking Date</h4>
+                </div>
+                <div class="col-md-8">
+                    <input id="date_selection" type="date" class="form-control"/>
+                </div>
+            </div>
+            <div class="row align-items-center mb-3">
+            <div class="col-md-12">
+                <h4 class="mb-0" style="float: left;">Return Flight?</h4>
+                <div class="switch_wrapper" style="float: left; padding-left: 20px;">
+                            <input class="switch switch-skewed" id="return_flight" name="return_flight" onclick="check_return()" type="checkbox" >
+                            <label class="switch-btn" data-tg-none="" data-tg-off="No" data-tg-on="Yes" for="return_flight"></label>
+                        </div>
+
+                </div>
+            </div>
+            <div class="row align-items-center">
+
+                <div class="col-md-8">
+                    <h4><span>$</span><span id="price">0</span><span style="color: red; font-size: 1rem; padding-left: 8px;" id="dollar">$</span>
+                        <span id="old-price" style="color: red; text-decoration: line-through; font-size: 1rem;">0</span></h4>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <button onclick="sendData()" class="btn btn-dark btn-lg w-25" style="color: white">Search</button>
+        </div>
+        <ul id="results" class="list-unstyled"></ul>
+    </div>
+    <script src="/static/assets/js/booking.js"></script>
+
+{%include "footer.html"%}

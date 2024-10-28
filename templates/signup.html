@@ -1,0 +1,65 @@
+{% include 'header.html' %}
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8"> <!-- Adjusted column size if needed -->
+            {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                        {{ message }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                {% endfor %}
+            {% endif %}
+            {% endwith %}
+
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title text-center mb-4" style="color: #EDEAD0">Sign Up</h2>
+                    <form action="/create-user/{{tier}}" method="post">
+                        <fieldset style="color: #EDEAD0">
+                            <legend>Personal Information</legend>
+                            <div class="mb-3">
+                                <label for="fname" class="form-label">First Name</label>
+                                <input type="text" class="form-control" name="fname" id="fname" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="lname" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" name="lname" id="lname" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" name="email" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" name="password" id="password" required>
+                            </div>
+                        </fieldset>
+
+                        <fieldset style="color: #EDEAD0">
+                            <legend>Credit Card Information</legend>
+                            <div class="mb-3">
+                                <label for="c_number" class="form-label">Card Number</label>
+                                <input type="text" class="form-control" name="c_number" id="c_number" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="cvc" class="form-label">CVC</label>
+                                <input type="text" class="form-control" name="cvc" id="cvc" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="e_date" class="form-label">Expiry Date</label>
+                                <input type="date" class="form-control" name="e_date" id="e_date" required>
+                            </div>
+                        </fieldset>
+
+                        <button type="submit" class="btn btn-dark w-100">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include "footer.html" %}

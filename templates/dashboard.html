@@ -1,0 +1,66 @@
+{% include 'header.html' %}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="welcome mb-4">
+                <h1 class="display-4" style="color: #EDEAD0">Welcome, {{ user["fname"] }}</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12" style="margin-bottom: 145px;">
+            <div class="bookings-container">
+                <h2 class="mb-3" style="color: #EDEAD0">Your Flights</h2>
+                {% if len(user["bookings"]) > 0 %}
+                    <div class="list-group">
+                        {% for booking in user["bookings"] %}
+                            <div class="list-group-item list-group-item-action flex-column align-items-start mb-2 option" style="background: #2c2c2c; color: white">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">{{booking["start_city"]}} <i class="fa-solid fa-plane-departure fa-lg"></i> {{booking["destination_city"]}}</h5>
+                                    <small>Date of departure: {{booking["booking_date"]}}</small>
+                                </div>
+                                <form action="/cancel-booking/{{booking['id']}}" method="post" class="mt-2">
+                                    <button type="submit" class="btn btn-danger">Cancel Booking</button>
+                                </form>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                <div class="alert" style="background: #2c2c2c" role="alert">
+                        <h4 class="alert-heading" style="color: #EDEAD0">No flights booked</h4>
+                        <p>Looks like you have no upcoming flights. Start booking now!</p>
+                    </div>
+                {% endif %}
+
+                <h2 class="mb-3" style="color: #EDEAD0">Lounge Bookings</h2>
+                {% if len(user["booking_lounges"]) > 0 %}
+                    <div class="list-group">
+                        {% for idx, lounge_booking in enumerate(user["booking_lounges"]) %}
+                            <div class="list-group-item list-group-item-action flex-column align-items-start mb-2 option" style="background: #2c2c2c; color: white">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">{{lounges[int(lounge_booking["lounge_id"])]["name"]}}</h5>
+                                    <small>Date of booking: {{lounge_booking["date"]}}</small>
+                                </div>
+                                <p>
+                                    {{lounges[int(lounge_booking["lounge_id"])]["description"]}}
+                                </p>
+                                <form action="/cancel-lounge/{{idx}}" method="post" class="mt-2">
+                                    <button type="submit" class="btn btn-danger">Cancel Booking</button>
+                                </form>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <div class="alert" style="background: #2c2c2c" role="alert">
+                        <h4 class="alert-heading" style="color: #EDEAD0">No lounges booked</h4>
+                        <p>Looks like you have no booked lounges. Start booking now!</p>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include "footer.html" %}

@@ -1,0 +1,525 @@
+/*___ Main page ___*/
+
+.nav-text {
+    color: #EDEAD0 !important;
+}
+
+.navbar_custom{
+    padding-top: 2.5%;
+    background: rgba(0, 0, 0, 0) !important;
+}
+
+.navbar_custom ul{
+    list-style-type: none !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    overflow: hidden !important;
+    background: rgba(0, 0, 0, 0.5) !important;
+}
+.navbar_custom li a{
+    display: block;
+    color: #EDEAD0;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-large;
+}
+
+.navbar_custom button{
+    display: block;
+    color: #EDEAD0;
+    text-decoration: none;
+    text-align: center;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-large;
+}
+
+.navbar_custom li{
+    float: left;
+}
+
+.navbar_custom li a:hover{
+    background: rgba(255, 187, 0, 0.5);
+}
+
+.navbar_custom .dropdown{
+    overflow: hidden;
+}
+
+/* The dropdown container */
+.navdropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.navdropdown .dropbutton{
+    border: none;
+    outline: none;
+    color: #EDEAD0;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+    font-size: x-large;
+    background-color: inherit;
+}
+
+.dropbutton{
+    background-color: none;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: rgba(252, 248, 239, 0.5);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+/* Links inside the dropdown */
+.dropdown_content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  /* Add orange background colour to navbar links on hover */
+.navbar a:hover, .navdropdown:hover .dropbutton{
+    background-color: rgba(255, 115, 0, 0.5);
+}
+
+.navbar .dropdown_content:hover a:hover{
+    background: rgba(200, 147, 0, 0.5);
+}
+
+/* Show the dropdown menu on hover */
+.navdropdown:hover .dropdown_content {
+    display: block;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the select dropdown */
+.dropbtn {
+    background-color: rgba(255, 255, 255, 0.444);
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.678);
+    backdrop-filter: blur(5px);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Show the dropdown menu on click */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style the options inside the dropdown */
+.dropbtn option {
+    color: black;
+}
+
+/* Change color of dropdown options on hover */
+.dropbtn option:hover {
+    background-color: rgba(255, 255, 255, 0.627);
+}
+
+.button_row{
+    padding: 2.5%;
+}
+
+::selection {
+    background: rgb(255, 208, 0);
+}
+
+input[type="datetime-local"] {
+    width: 160px;
+}
+
+body{
+    background: url("https://images.unsplash.com/photo-1621293954908-907159247fc8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    font-family: 'Montserrat', sans-serif;
+}
+
+p{
+    text-align: left;
+    color: white;
+}
+
+table{
+    background-color: rgba(0, 0, 0, 0.5);    
+    padding-top: 10%;
+    border-radius:6px;
+}
+
+#_button{
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    background: rgba(21, 23, 24, 0.8);
+    border-radius: 29px;
+    padding: 20px 0;
+    color: white;
+    text-decoration: none;
+    transition: background .3s ease;
+}
+#_button:hover{
+    background: #000;
+}
+
+
+
+#table_cards{
+    text-align: left;
+    color: #EDEAD0;
+    border-collapse: collapse;
+    border: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    margin-top: 5%;
+}
+#table_cards td{
+    height: fit-content;
+    text-align: center;
+}
+
+#table_cards th{
+    font-size: 25px;
+}
+
+#home_H1 {
+    text-align: center;
+    color: #EDEAD0;
+    padding: 30px;
+}
+
+#home_H2 {
+    text-align: center;
+    color: beige;
+    padding: 10px;
+}
+
+#text_title {
+    text-align: center;
+    color: beige;
+    font-size: 30px;
+}
+
+#price_trip{
+    font-weight: normal;
+    font-size: 30px;
+    padding-left: 0px;
+}
+
+#align_left{
+    text-align: left;
+}
+
+#align_centre{
+    text-align: center;
+}
+
+#align_right{
+    text-align: right;
+}
+
+#logo {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: calc(50% - 65px);
+}
+
+.navbar{
+    font-size: 1.5rem !important;
+}
+
+
+#logo img{
+    width: 125px;
+    height: 125px;
+}
+
+
+/* @media only screen and (max-width: 600px){
+    #arrow_icon {
+        display:block;
+    }
+} */
+
+
+/* hides the extra menu bar */
+#mobile_nav {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px){
+    #arrow img{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        z-index: 1;
+        top: 10px;
+        padding-bottom: 10px;
+        left: calc(50% - 20px);
+        cursor: pointer;
+    }  
+    #table_cards{
+        margin-top: 20%;
+    }
+}
+
+@media only screen and (min-width: 1001px) {
+    #arrow img{
+        display: none;
+    }
+}
+
+#mobile_nav div{
+    width: 35px;
+    height: 3px;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+
+
+/*___ Cards ___*/
+
+/* specifies them in a boarder */
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 0.2rem;
+    height: 100%;
+}
+
+/* makes the cards in a grid format in this instance 1 by 3 */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4%;
+    padding: 12% 0;
+}
+
+/* changes the card size and background */
+.card {
+    position: relative !important;
+    /* padding: 50px; */
+    border-radius: 10px !important;
+    background-color: rgba(255, 255, 255, 0.0) !important;
+    backdrop-filter: blur(5px) !important;
+    border: 1px solid transparent !important;
+    transition: border 0.3s ease !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+
+.option {
+    position: relative !important;
+    /* padding: 50px; */
+    border-radius: 10px !important;
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    backdrop-filter: blur(5px) !important;
+    border: 1px solid transparent !important;
+    transition: border 0.3s ease !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.card #Aviator{
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(224, 193, 113, 0.8);
+    border: 5px solid #f7e256;
+}
+
+.card #Voyager{
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(183, 171, 141, 0.8);
+    border: 5px solid #d5d0ad;
+}
+
+
+
+.card #Basic{
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(140, 140, 140, 0.8);
+    border: 5px solid #858585;
+}
+
+.card_title {
+    font-weight: normal;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.pricing {
+    font-weight: normal;
+    font-size: 60px;
+}
+
+.pricing .small {
+    font-size: 16px;
+}
+
+hr {
+    margin-top: 70px;
+}
+
+.features {
+    margin: 40px 0;
+    list-style-position: inside;
+}
+
+.features li {
+    padding-bottom: 10px;
+}
+
+a.card_button {
+    width: 100% !important;
+    display: inline-block !important;
+    text-align: center !important;
+    background: rgba(21, 23, 24, 0.7) !important;
+    border-radius: 29px !important;
+    padding: 20px 0 !important;
+    color: white !important;
+    text-decoration: none !important;
+    letter-spacing: 2px !important;
+    transition: background .3s ease !important;
+    border: 0px;
+}
+
+a.card_button:hover {
+    background: #000 !important;
+}
+
+.card:hover #Aviator{
+    transition: border 0.3s ease;
+    border: 10px solid #f7e256;
+}
+
+.card:hover #Voyager{
+    transition: border 0.3s ease;
+    border: 10px solid #e7d6a8;
+}
+
+.card:hover #Basic{
+    transition: border 0.3s ease;
+    border: 10px solid #858585;
+}
+
+.card > #Aviator::after {
+    position: absolute;
+    content: "";
+    top: calc(var(--card-height) / 6);
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.8);
+    filter: blur(calc(var(--card-height) / 3));
+    background-image: linear-gradient(
+      var(--rotate)
+      , #5ddcff, #3c67e3 43%, #4e00c2);
+      opacity: 1;
+    transition: opacity .5s;
+    animation: spin 2.5s linear infinite;
+  }
+
+/* 
+
+___ checkbox_switch ___
+
+*/
+
+.switch {
+    display: none;
+}
+
+.switch_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.switch + .switch-btn {
+    display: block;
+    width: 4em;
+    height: 2em;
+    position: relative;
+    cursor: pointer;
+    background: #2c2c2c;
+    transition: background-color 0.2s ease;
+}
+
+.switch:checked + .switch-btn {
+    background: #007622;
+}
+
+.switch + .switch-btn:before,
+.switch + .switch-btn:after {
+    position: absolute;
+    content: attr(data-tg-none);
+    width: 50%;
+    height: 100%;
+    top: 0;
+    transition: all 0.2s ease;
+    text-align: center;
+    line-height: 2em;
+}
+
+.switch + .switch-btn:before {
+    left: 25%;
+    content: attr(data-tg-off);   
+}
+
+.switch + .switch-btn:after {
+    left: -25%;
+}
+
+.switch:checked + .switch-btn:before {
+    transform: translateX(100%);
+    content: ""; 
+}
+
+.switch:checked + .switch-btn:after {
+    content: "";
+    transform: translateX(100%);
+    content: attr(data-tg-on);
+}
+
